@@ -1,0 +1,13 @@
+ingress:
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+  enabled: true
+  hosts:
+    - host: up.cloudops-4.ucll.cloud
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
+  tls:
+    - secretName: kuma-tls
+      hosts:
+        - up.cloudops-4.ucll.cloud

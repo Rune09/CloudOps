@@ -1,0 +1,7 @@
+ingress:
+  enabled: true
+  hosts:
+    - host: wiki.cloudops-4.ucll.cloud
+      paths:
+        - path: "/"
+          pathType: Prefix
